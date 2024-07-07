@@ -4,6 +4,7 @@ function buscar() {
     const tipoPoke = document.getElementById("tipoPokemon");
     const spritePoke = document.getElementById("sprite");
     const generacionPoke = document.getElementById("generacionPokemon");
+    const nPoke = document.getElementById("nPokemon");
     let url = "https://pokeapi.co/api/v2/pokemon/" + nombreOid;
     if (nombreOid != "") {
         fetch(url.toLowerCase())
@@ -46,6 +47,7 @@ function buscar() {
                 tipoPoke.textContent = "Tipo: " + tipoConcatenado;
                 let urlImg = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${idPoke}.png`;
                 spritePoke.src = urlImg.toLowerCase();
+                nPoke.textContent = `N pokédex: ${idPoke}`;
             })
             .catch(error => {
                 console.error(error)
