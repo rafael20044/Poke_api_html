@@ -44,7 +44,7 @@ function buscar() {
                     tipoConcatenado += tipo + ", ";
                 });
                 tipoPoke.textContent = "Tipo: " + tipoConcatenado;
-                let urlImg = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${nombreOid}.png`;
+                let urlImg = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${idPoke}.png`;
                 spritePoke.src = urlImg.toLowerCase();
             })
             .catch(error => {
