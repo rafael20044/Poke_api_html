@@ -16,10 +16,6 @@ body{
     background-repeat: no-repeat;
 }
 
-.main{
-    width: 100%;
-}
-
 .main__contenido{
     margin: 2%;
     display: flex;
@@ -66,9 +62,15 @@ body{
     font-family: var(--fuente-2);
 }
 
+.main__resultado a{
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: var(--fuente-2);
+    color: purple   ;
+}
+
 .main__resultado__div img{
     width: 12.5rem;
-
 }
 
 @media (max-width:768px) and (max-height:1024px) {
