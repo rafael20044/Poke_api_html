@@ -12,20 +12,21 @@
             <div>
                 <img src="assets/img/pokeapi_256.png" alt="Logo de pokeApi">
             </div>
-            <form class="main__contenido__formulario">
-                <p>Digite el nombre o el numero de la pokédex</p>
-                <input type="text">
+            <p>Digite el nombre o el numero de la pokédex</p>
+            <form class="main__contenido__formulario">     
+                <input type="text" id="input">
             </form>
-            <button class="main__contenido__boton">Buscar</button>
+            <button class="main__contenido__boton" onclick="buscar();">Buscar</button>
         </section>
         <div class="main__resultado">
-            <p>Nombre: null</p>
-            <p>Tipo: null</p>
-            <p>Generacion: null</p>
-            <div>
-                <img>
+            <p id="nombrePokemon">Nombre: null</p>
+            <p id="tipoPokemon">Tipo: null</p>
+            <p id="generacionPokemon">Generación: null</p>
+            <div class="main__resultado__div">
+                <img id="sprite">
             </div>
         </div>
     </main>
+    <script src="index.js"></script>
 </body>
 </html>
